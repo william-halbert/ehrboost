@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "../components/header";
 import "../css/login.css";
-import logo from "../images/logoBlack.png";
+import logo from "../images/blackText.png";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -39,6 +39,7 @@ function LogIn() {
     }
 
     logInJSON().then((user) => {
+      console.log(user.token);
       navigate(
         "../home",
         { state: { email, token: user.token } },
@@ -63,7 +64,7 @@ function LogIn() {
           value={email}
           onChange={(e) => updateForm(e)}
           placeholder="Email address"
-          className="emailLogin loginBtn"
+          className="emailLogin loginBtn moveLeft"
         />
         <input
           type="password"
@@ -71,18 +72,22 @@ function LogIn() {
           value={password}
           onChange={(e) => updateForm(e)}
           placeholder="Password"
-          className="passwordLogin loginBtn"
+          className="passwordLogin loginBtn moveLeft"
         />
-        <Link to="forgot-password" state={email} className="forgotPassword">
+        <Link
+          to="forgot-password"
+          state={email}
+          className="forgotPassword moveLeft"
+        >
           Forgot password?
         </Link>
         <input
           type="submit"
-          className="submitLogin loginBtn"
+          className="submitLogin loginBtn moveLeft"
           value="Continue"
         />
       </form>
-      <div className="loginToSignup">
+      <div className="loginToSignup ">
         <p className="dontLogin">Don't have an account?</p>
         <Link to="../signup" className="loginLinkToSignup">
           Sign up

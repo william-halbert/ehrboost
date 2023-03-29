@@ -1,0 +1,232 @@
+.availablePlans .plan-card .bottom .planFeatures {
+  font-size: 0.9rem;
+  margin: 0;
+  color: black;
+  margin-left: 1px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.availablePlans .plan-card .learn-more {
+  display: block;
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 1px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.availablePlans .bottom-divider {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: rgb(231, 231, 231);
+  margin: 20px auto;
+}
+.availablePlans .price {
+  margin-top: 0.8rem;
+}
+.availablePlans .billing-details {
+  margin-top: 0.2rem;
+  letter-spacing: 0.05rem;
+  font-weight: bold;
+}
+.availablePlans .select {
+  margin: 0 1rem 1rem 0;
+}
+.your-plan-section {
+  background-color: #82a1c0ff;
+  padding: 0.5rem 1.5rem;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: black;
+}
+.your-plan-section h5 {
+  margin: 0;
+}
+.plan-card .btn:focused {
+  outline: none;
+}
+.availablePlans .plan-title {
+  font-weight: 900; /* Bold text */
+  font-size: 1.9rem;
+}
+
+/* Premium Doctor Card styles */
+.availablePlans .plan-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
+}
+
+/* Card top styles */
+.availablePlans .plan-card .top {
+  padding: 3.5rem 1.5rem;
+}
+
+/* Card bottom styles */
+.availablePlans .plan-card .bottom {
+  padding: 1rem 1.5rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.bold {
+  font-weight: bold;
+}
+.availablePlans .plan-card .bottom .right-side .expires {
+  font-size: 0.8rem;
+  margin-top: 0;
+  padding-top: 0;
+  letter-spacing: 0.02rem;
+}
+.availablePlans .plan-card .bottom .right-side .card {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  padding-top: 0;
+  letter-spacing: 0.02rem;
+}
+.plan-card .bottom .right-side .nextBill {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 1rem;
+
+  padding-top: 0;
+  letter-spacing: 0.02rem;
+}
+.plan-card .bottom .right-side .update {
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  padding-top: 0;
+  letter-spacing: 0.02rem;
+  text-decoration: none;
+  font-weight: 600;
+
+  color: rgb(91, 91, 91);
+  cursor: pointer;
+  margin-left: 0.3rem;
+  margin-bottom: 5px; /* Decreased margin */
+}
+.plan-card .bottom .right-side .update:hover {
+  color: black;
+  /* Decreased margin */
+}
+/* Left side content of the bottom part of the card */
+.plan-card .bottom .left-side {
+  flex: 1;
+}
+.plan-card .bottom .left-side h5 {
+  font-size: 0.9rem;
+  margin: 0.8rem 0.5rem 1.5rem 0;
+}
+
+/* Right side content of the bottom part of the card */
+.plan-card .bottom .right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align payment details to the left side */
+}
+.plan-card .bottom .right-side .row {
+  width: 20vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Learn more link style */
+.plan-card .bottom .left-side .learn-more {
+  display: block;
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 1px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Payment text style */
+.plan-card .bottom .right-side .payment {
+  font-weight: bold;
+  font-size: 1.4rem; /* Increased size */
+  margin-bottom: 0.25rem; /* Decreased margin */
+}
+
+/* Visa and Expires text style */
+.plan-card .bottom .right-side .visa-expires {
+  margin-bottom: 0; /* Decreased margin */
+}
+
+.right-side p,
+h5 {
+  margin: 5px;
+}
+.plan-buttons {
+  display: flex;
+  justify-content: start;
+  margin-top: 1rem;
+}
+
+.plan-card .ehrBoostFree {
+  background-color: #b3b3b3ff;
+}
+
+.plan-card .premiumIndividual {
+  background-color: #ffd2d6ff;
+  border: 3px solid #ffd2d6ff;
+}
+
+.plan-card .premiumBusiness {
+  background-color: #a5bad1;
+}
+
+.availablePlans {
+  width: 72%;
+  margin: 3vh 4vw 15vh 4vw;
+}
+
+.plan-card.pink .your-plan-section {
+  background-color: rgb(241, 176, 181);
+}
+
+.plan-card.grey .your-plan-section {
+  background-color: rgb(147, 146, 146);
+}
+
+.plan-card.dark-blue .your-plan-section {
+  background-color: #82a1c0ff;
+}
+.available-plans-container .features {
+  margin-bottom: 15px;
+}
+
+.available-plans-container .features p {
+  margin-bottom: 10px;
+}
+
+.available-plans-container .bottom-pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.available-plans-container .price-section {
+  text-align: left;
+}
+
+.available-plans-container .price {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 2.5rem;
+}
+
+.available-plans-container .billing-details {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}

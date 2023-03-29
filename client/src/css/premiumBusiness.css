@@ -1,0 +1,379 @@
+.account-page-right-wrap {
+  width: 84%;
+}
+.plan-management {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0;
+  border-radius: 0;
+  width: 100%;
+}
+.plan-color {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  flex-direction: column;
+
+  background-color: #a5bad1;
+}
+.account-page .sidebar {
+  width: 21vw;
+}
+
+.plan-color h1 {
+  margin: 2rem 6rem 0 4rem;
+  text-align: left;
+
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.plan-color h5 {
+  color: black;
+  margin: 0.5rem 0 5rem 4rem;
+  font-size: 1.1rem;
+  width: 25vw;
+}
+.plan-content-wrap {
+  padding: 0 4rem;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  top: -3vh;
+  padding-bottom: 2vh;
+}
+.plan-content {
+  padding: 2rem;
+  display: flex;
+  align-self: start;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 4rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  margin-bottom: 0;
+}
+
+.plan-address {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  padding: 25px;
+  position: relative;
+  top: -6.5vh;
+  align-self: start;
+  margin-left: 4rem;
+  z-index: 2;
+  width: 20vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan-address h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+.plan-address p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.arrow-icon {
+  font-size: 1.2rem;
+  color: #ff5423;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.plan-providers {
+  border-radius: 8px;
+  align-self: start;
+}
+
+.plan-providers h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.provider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.provider:last-child {
+  margin-bottom: 0;
+}
+
+.user-icon {
+  font-size: 1.5rem;
+  color: #ff5423;
+  margin-right: 10px;
+}
+
+.provider-details {
+  flex: 1;
+}
+
+.provider-details h5 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.provider-details h5:first-child {
+  font-weight: bold;
+}
+
+.provider-details h5:last-child {
+  font-weight: normal;
+  color: #333;
+}
+
+.manage-business {
+  margin-top: 40px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  padding: 25px;
+}
+
+.manage-business h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.manage-business h5 {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.manage-business h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.manage-business p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.manage-business .provider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.manage-business .provider:last-child {
+  margin-bottom: 0;
+}
+
+.manage-business .user-icon {
+  font-size: 1.5rem;
+  color: #ff5423;
+  margin-right: 10px;
+}
+
+.manage-business .provider-details {
+  flex: 1;
+}
+
+.manage-business .provider-details h5 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.manage-business .provider-details h5:first-child {
+  font-weight: bold;
+}
+.manage-business .provider-details h5:last-child {
+  color: #979797;
+  font-size: 14px;
+}
+
+/* Right arrow icon */
+.manage-business .arrow-icon {
+  margin-left: auto;
+  color: #3d3d3d;
+  font-size: 16px;
+}
+
+/* Your address section */
+.manage-business .your-address {
+  position: relative;
+  z-index: 1;
+  margin-top: -40px;
+  margin-bottom: 30px;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.manage-business .your-address h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #3d3d3d;
+}
+
+.manage-business .your-address p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #6b6b6b;
+}
+
+/* Premium provider section */
+.manage-business .premium-provider {
+  margin-bottom: 30px;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.manage-business .premium-provider h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #3d3d3d;
+}
+
+.manage-business .provider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.manage-business .provider:last-child {
+  margin-bottom: 0;
+}
+
+.manage-business .provider .user-icon {
+  font-size: 20px;
+  color: #3d3d3d;
+  margin-right: 20px;
+}
+
+.manage-business .provider .provider-details {
+  flex: 1;
+}
+
+.manage-business .provider .provider-details h5:first-child {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #3d3d3d;
+}
+
+.manage-business .provider .provider-details h5:last-child {
+  font-size: 14px;
+  color: #979797;
+}
+
+.manage-business .provider .arrow-icon {
+  color: #3d3d3d;
+  font-size: 16px;
+}
+.add-to-company-wrap {
+  background-color: #f8f8f8ff;
+  border-radius: 8px;
+  margin-left: 2rem;
+  width: 20vw;
+  height: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-self: start;
+  align-self: start;
+  padding: 1rem;
+}
+
+.add-to-company-wrap .company-email {
+  align-self: center;
+  margin: 0;
+}
+.add-to-company-wrap .btn,
+plan-buttons,
+.copy-email {
+  padding: 0;
+  align-self: center;
+  width: 19vw;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+.add-to-company-wrap h5 {
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+.copy-code {
+  align-self: center;
+  background-color: white;
+  border: 1px solid lightgrey;
+  color: black; /* Darker text color */
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  max-width: 100%;
+  margin: 01.5rem 0 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 19px;
+}
+.copy-code:hover {
+  border: 1px solid rgb(91, 91, 91);
+  background: white;
+  padding: 18px;
+}
+.copy-code:active {
+  outline: 0;
+}
+.copy-code:focus {
+  outline: 4px solid black;
+}
+.copy-icon {
+  font-size: 1.3rem;
+  color: black;
+  margin-right: 10px;
+}
+
+.email-icon {
+  font-size: 1.3rem;
+  color: black;
+  margin: 0;
+  margin-right: 0.5rem;
+}

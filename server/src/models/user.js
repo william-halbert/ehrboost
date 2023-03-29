@@ -3,6 +3,9 @@ const validator = require("validator");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const Task = require("./task");
+const CreditCard = require("./creditCard");
+const PremiumProvider = require("./premiumProvider");
+const Receipt = require("./receipt");
 
 const userSchema = new mongoose.Schema(
   {
@@ -77,6 +80,26 @@ userSchema.virtual("tasks", {
   foreignField: "owner",
 });
 
+userSchema.virtual("creditCards", {
+  ref: "CreditCard",
+  localField: "_id",
+  foreignField: "owner",
+});
+
+// Virtual property for Premium Providers
+userSchema.virtual("premiumProviders", {
+  ref: "PremiumProvider",
+  localField: "_id",
+  foreignField: "owner",
+});
+
+// Virtual property for Receipts
+userSchema.virtual("receipts", {
+  ref: "Receipt",
+  localField: "_id",
+  foreignField: "owner",
+});
+
 userSchema.methods.toJSON = function () {
   const user = this;
   const userObject = user.toObject();
@@ -136,3 +159,47 @@ userSchema.pre("remove", async function (next) {
 const User = mongoose.model("User", userSchema);
 
 module.exports = User;
+/*
+,
+    countryOfOrigin: {
+      type: String,
+      required: true,
+      trim: true,
+    },
+    currentPlan: {
+      type: String,
+      required: true,
+      trim: true,
+    },
+
+    address: {
+      type: String,
+      required: true,
+      trim: true,
+    },
+
+    gender: {
+      type: String,
+      required: true,
+      trim: true,
+      enum: ["male", "female", "other"],
+    },
+    dateOfBirth: {
+      day: {
+        type: Number,
+        required: true,
+        min: 1,
+        max: 31,
+      },
+      month: {
+        type: Number,
+        required: false,
+        min: 1,
+        max: 12,
+      },
+      year: {
+        type: Number,
+        required: false,
+        min: 1900,
+      },
+    },*/

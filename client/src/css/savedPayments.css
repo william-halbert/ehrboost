@@ -1,0 +1,85 @@
+/* savedPaymentCards.css */
+
+.saved-payment-cards {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.saved-payment-cards h1 {
+  text-align: left;
+  font-size: 2.2rem;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.saved-payment-cards h5 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.cards-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.lock-icon {
+  font-size: 18px;
+}
+
+.card-section,
+.add-card-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  padding: 15px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.card-section:hover {
+  background-color: #f8f8f8ff; /* Hover effect */
+  cursor: pointer;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.masked-number {
+  margin: 0 5px; /* Reduced margin */
+}
+.masked-add-card {
+  margin: 0 3rem;
+  position: relative;
+  left: 1rem;
+  top: 0.3rem;
+}
+
+.credit-card-icon {
+  font-size: 24px;
+}
+
+.add-card-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #ff7f50;
+  cursor: pointer;
+  transition: color 0.3s, font-size 0.3s; /* Added font-size transition */
+  font-size: 0.9rem; /* Reduced font-size */
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

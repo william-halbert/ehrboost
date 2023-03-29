@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../css/login.css";
-import logo from "../../images/logoBlack.png";
+import logo from "../../images/blackText.png";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -47,38 +47,46 @@ function PrimaryUse() {
       transition={{ duration: 0.5 }}
     >
       <img src={logo} className="loginLogo" />
-      <h2 className="welcomeLogin">How will you primarily use ChemE.AI?</h2>
+      <h2 className="welcomeLogin">What type of medical provider are you?</h2>
       <button
         type="button"
-        value="building"
+        value="M.D."
         className="signupUse"
         onClick={handleSubmit}
       >
-        I'm a chemical engineering student
+        Doctor of Medicine
       </button>
       <button
         type="button"
-        value="exploring"
+        value="N.P."
         className="signupUse"
         onClick={handleSubmit}
       >
-        I'm exploring personal use
+        Nurse Practitioner
       </button>
       <button
         type="button"
-        value="research"
+        value="D.O."
         className="signupUse"
         onClick={handleSubmit}
       >
-        I'm studying another engineering
+        Doctor of Osteopathic Medicine
       </button>
       <button
         type="button"
-        value="content"
+        value="D.D.S."
         className="signupUse"
         onClick={handleSubmit}
       >
-        I'm a chemical engineer in industry
+        Doctor of Dental Surgery
+      </button>
+      <button
+        type="button"
+        value="Psy.D."
+        className="signupUse"
+        onClick={handleSubmit}
+      >
+        Doctor of Psychology
       </button>
     </motion.div>
   );

@@ -1,0 +1,64 @@
+.headerAccount {
+  display: flex;
+  background: black;
+  height: 11vh;
+}
+.headerAccountLogo {
+  margin-top: 0;
+  margin-left: 11.5vw;
+}
+.headerAccount .profile {
+  color: #fefefe;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+}
+.headerAccount .signIn:hover {
+  color: #fd5622ff;
+  text-decoration: none;
+}
+.headerAccount .whiteProfile {
+  position: absolute;
+  right: 5.5vw;
+  top: -1.5vh;
+  height: 6.5vh;
+}
+
+.headerAccount .orangeProfile {
+  display: none;
+  position: absolute;
+  right: 5.5vw;
+  top: -1.5vh;
+  height: 6.5vh;
+}
+.headerAccount .profile {
+  position: absolute;
+  right: 1vw;
+  top: 3.7vh;
+  height: 6.5vh;
+}
+.headerAccount .profileWrap {
+  position: absolute;
+  right: 12.5vw;
+  height: 11vh;
+  width: 10vw;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+}
+.headerAccount .profileWrap:hover .orangeProfile {
+  display: block;
+}
+.headerAccount .profileWrap:hover .whiteProfile {
+  display: none;
+}
+.headerAccount .profileWrap:hover .profile {
+  color: #fd5622ff;
+}
+.headerAccount .orangeProfile:hover {
+  cursor: pointer;
+}
+
+.headerAccount .profileWrap:hover {
+  cursor: pointer;
+}

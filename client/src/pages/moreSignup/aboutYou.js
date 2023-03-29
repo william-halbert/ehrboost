@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "../../components/header";
 import "../../css/login.css";
-import logo from "../../images/logoBlack.png";
+import logo from "../../images/blackText.png";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -66,33 +66,37 @@ function AboutYou() {
       <img src={logo} className="loginLogo" />
       <h2 className="welcomeLogin">Tell us about you</h2>
       <form action="POST" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          id="firstName"
-          value={firstName}
-          onChange={(e) => updateForm(e)}
-          placeholder="First name"
-          className="firstNameSignup"
-        />
-        <input
-          type="text"
-          id="lastName"
-          value={lastName}
-          onChange={(e) => updateForm(e)}
-          placeholder="Last name"
-          className="lastNameSignup"
-        />
+        <div className="firstAndLastName row">
+          <input
+            type="text"
+            id="firstName"
+            value={firstName}
+            onChange={(e) => updateForm(e)}
+            placeholder="First name"
+            className="firstNameSignup"
+          />
+
+          <input
+            type="text"
+            id="lastName"
+            value={lastName}
+            onChange={(e) => updateForm(e)}
+            placeholder="Last name"
+            className="lastNameSignup"
+          />
+        </div>
         <input
           type="text"
           id="organization"
           value={organization}
           onChange={(e) => updateForm(e)}
           placeholder="Organization name (optional)"
-          className="passwordLogin loginBtn"
+          className="passwordLogin loginBtn moveLeft"
         />
+
         <input
           type="submit"
-          className="submitLogin loginBtn"
+          className="submitLogin loginBtn moveLeft"
           value="Continue"
         />
       </form>

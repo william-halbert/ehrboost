@@ -1,0 +1,92 @@
+/* receipts.css */
+
+.receipts {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.receipts h1 {
+  text-align: left;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: black;
+  margin: 2rem 4rem;
+}
+
+.receipts-table {
+  width: 84%;
+  border-collapse: collapse;
+  margin: 2rem 4rem 0 4rem;
+}
+
+.receipts-table th {
+  padding: 10px;
+  text-align: left;
+  font-size: 0.7rem;
+}
+
+.receipts-table td {
+  padding: 10px;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.receipts-table th {
+  background-color: white;
+  font-weight: bold;
+  color: grey;
+}
+
+.receipts-table tr:not(:last-child) td {
+  border-bottom: 0.5px solid #ccc;
+}
+
+.receipts-table td:first-child {
+  font-weight: bold;
+  color: black;
+}
+
+.receipts-table td:not(:first-child) {
+  color: grey;
+}
+
+.view-details {
+  color: grey;
+  text-decoration: underline;
+}
+
+.view-details:hover {
+  color: #fd5622ff;
+}
+
+.see-more-btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.see-more-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.see-more-btn:hover {
+  background-color: #0069d9;
+}
+
+.see-more-btn-container .orangeSubmit {
+  background: #fd5622ff;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.see-more-btn-container .orangeSubmit:hover {
+  background: #fd5622ff;
+  border: 1px solid rgba(0, 0, 0, 0);
+  outline: 0;
+}

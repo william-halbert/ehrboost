@@ -22,23 +22,26 @@
 .everythingText {
   text-align: center;
   margin-top: 4vh;
-  color: hsla(8, 43%, 78%, 1);
+  color: white;
   font-size: 54px;
   z-index: 2;
   letter-spacing: 2px;
   margin-bottom: 0;
+  text-shadow: 4px 4px black;
 }
 .withKeyText {
   text-align: center;
   margin-top: 5vh;
-  color: #fefefe;
-  font-size: 22px;
+  color: white;
+  text-shadow: 2px 2px black;
+  font-size: 32px;
   z-index: 2;
   letter-spacing: 1px;
   margin-bottom: 0;
+  font-weight: bold;
 }
 
-.btn {
+.heroWrapper .btn {
   margin: 0;
   padding: 15px 20px;
   background: rgba(76, 175, 80, 0);
@@ -48,21 +51,27 @@
   font-size: 20px;
   letter-spacing: 0.8px;
 }
-.btn:hover {
+.heroWrapper .btn:hover {
   /*box-shadow: 0 3px 10px #f9deb1;*/
   color: #f9deb1;
   cursor: pointer;
 }
-.tryNow {
+.heroWrapper .tryNow {
   margin-top: 8vh;
-  background: hsla(12, 48%, 57%, 1);
-  border-radius: 8px;
+  /*background: #fd5622ff;*/
+  border-radius: 1px;
+  border: 3px solid white;
   font-size: 18px;
   padding: 24px 14px 24px 28px;
 }
-.tryNow:hover {
-  color: white;
-  background: hsla(8, 43%, 78%, 1);
+
+.heroWrapper .tryNow:hover {
+  /*background: white;*/
+  background: white;
+}
+.heroWrapper .tryNow:hover .tryText {
+  /*color: #fd5622ff;*/
+  color: black;
 }
 
 /*scheme dark orange hsla(12, 48%, 57%, 1);
@@ -73,10 +82,50 @@ scheme light orange: hsla(8, 43%, 78%, 1);
   top: 2px;
   margin-left: 10px;
   color: white;
+  display: none;
 }
 .tryText {
   color: white;
   font-size: 18px;
   text-decoration: none;
   font-weight: bold;
+}
+.mapsWrap {
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+}
+#usaMap {
+  margin: 5vh 3vw 5vh 5vw;
+  text-align: center;
+  width: 40vw;
+}
+.white {
+  color: white;
+}
+.mapsText {
+  width: 50vw;
+  margin: 0 0;
+}
+.h2 {
+  margin: 20px;
+  font-size: 1.4em;
+  letter-spacing: 0.05em;
+  line-height: 1.6em;
+}
+.orange {
+  color: #fd5622ff;
+}
+
+.h1 {
+  margin-top: 0;
+  font-size: 2.5em;
+  text-underline-offset: 0.25em;
+  margin-bottom: 20px;
+  letter-spacing: 0.1em;
+}
+.italics {
+  font-style: italic;
 }

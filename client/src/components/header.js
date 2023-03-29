@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../images/whiteLogo.png";
+import logo from "../images/blackText.png";
 import "../css/header.css";
 import { Link } from "react-router-dom";
 
@@ -11,7 +11,7 @@ function Header() {
       <Link to="../">
         <img src={logo} className="headerLogo" />
       </Link>
-      <Link to="features" className="features">
+      <Link to="/features" className="features">
         Features
       </Link>
       <Link to="../login" className="signIn">

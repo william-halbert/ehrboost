@@ -14,6 +14,20 @@ textGrey: #3D3D3D;
 light oragne for button first color: #cc8472;
 */
 
+.moveLeft {
+  position: relative;
+  right: 27px;
+}
+.loginBtn,
+.loginLinkToSignup {
+  margin: 0 auto;
+}
+.firstAndLastName {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .loginPage {
   display: flex;
   flex-direction: column;
@@ -22,20 +36,26 @@ light oragne for button first color: #cc8472;
   align-items: center;
 }
 .loginLogo {
-  width: 5vw;
+  width: 24vw;
   margin-top: 3vh;
 }
 .welcomeLogin {
-  margin-top: 16vh;
+  margin-top: 6vh;
   font-size: 32px;
   letter-spacing: 2px;
   font-weight: 900;
+}
+.loginPage Form {
+  color: black;
+  width: 300px;
+  padding: 0;
 }
 .emailLogin,
 .passwordLogin,
 .submitLogin {
   display: block;
   margin: 0 auto;
+  align-self: center;
 }
 .loginBtn {
   width: 300px;
@@ -51,7 +71,7 @@ light oragne for button first color: #cc8472;
 }
 .loginBtn:focus {
   outline: none !important;
-  border: 2px solid hsla(12, 48%, 57%, 1);
+  border: 2px solid #fd5622ff;
 }
 .loginBtn:focus::placeholder {
   color: transparent;
@@ -59,22 +79,21 @@ light oragne for button first color: #cc8472;
 .submitLogin {
   min-width: 350px;
   margin: 28px 0 0 0;
-  background: #cc8472;
+  background: #fd5622ff;
   border: none;
   color: #fefefe;
   font-size: 16px;
   letter-spacing: 0.5px;
 }
 .submitLogin:hover {
-  background: hsla(12, 48%, 57%, 1);
+  outline: 2px solid white;
+  outline-offset: -6px;
   cursor: pointer;
 }
 .passwordLogin {
   margin: 13px 0 0 0;
 }
-.submitLogin::placeholder {
-  color: white;
-}
+
 .loginToSignup {
   margin-top: 4px;
   display: flex;
@@ -92,7 +111,7 @@ light oragne for button first color: #cc8472;
   font-size: 13px;
   font-weight: bold;
   text-decoration: none;
-  color: hsla(12, 48%, 57%, 1);
+  color: #fd5622ff;
 }
 .forgotPassword {
   display: block;
@@ -100,7 +119,9 @@ light oragne for button first color: #cc8472;
   font-size: 13px;
   font-weight: bold;
   text-decoration: none;
-  color: hsla(12, 48%, 57%, 1);
+  color: #fd5622ff;
+  align-self: left;
+  margin-left: 0;
 }
 .signUpBtn {
   margin-top: 40px;
@@ -115,7 +136,7 @@ light oragne for button first color: #cc8472;
   margin-bottom: 15px;
 }
 .welcomeSignup {
-  margin-top: 16vh;
+  margin-top: 6vh;
   font-size: 32px;
   letter-spacing: 2px;
   font-weight: 900;
@@ -146,7 +167,7 @@ light oragne for button first color: #cc8472;
 .firstNameSignup:focus,
 .lastNameSignup:focus {
   outline: none !important;
-  border: 2px solid hsla(12, 48%, 57%, 1);
+  border: 2px solid #fd5622ff;
 }
 .confirmAge {
   position: relative;
@@ -172,7 +193,7 @@ light oragne for button first color: #cc8472;
 .signupUse:hover {
   outline: none !important;
   padding: 13px 18px;
-  border: 3px solid hsla(8, 43%, 78%, 1); /*hsla(12, 48%, 57%, 1);*/
+  border: 3px solid #fd5622ff; /*hsla(12, 48%, 57%, 1);*/
   cursor: pointer;
 }
 .noteOnCreditsText {
@@ -184,4 +205,11 @@ light oragne for button first color: #cc8472;
   font-size: 13px;
   margin-bottom: 0;
   line-height: 18px;
+}
+.emailLogin,
+.passwordLogin,
+.submitLogin {
+  display: block;
+  margin: 13px auto 0 auto;
+  align-self: center;
 }

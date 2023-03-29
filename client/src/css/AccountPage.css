@@ -1,0 +1,359 @@
+.profile-logo-container {
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+}
+
+.profile-logo {
+  margin: 0;
+  width: 16vh; /* Adjust the width as needed */
+  height: 16vh; /* Adjust the height as needed */
+  object-fit: cover;
+  border-radius: 50%; /* Creates a circular shape */
+}
+.grey {
+  background-color: #b3b3b3ff;
+}
+
+.pink {
+  background-color: #ffd2d6ff;
+}
+
+.blue {
+  background-color: #a5bad1;
+}
+
+.profile-your-plan {
+  margin: 0 auto;
+  width: 65%;
+  height: 30vh;
+  padding: 5vh 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.profile-your-plan h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+/* Container for the entire account page */
+.profileText {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.accountOverviewPage {
+  background: #1e2939ff;
+  margin: 0;
+}
+/* Container for the entire account page */
+.account-page {
+  display: flex;
+  padding: 0 0;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+@media screen and (min-width: 1040px) {
+  .account-page {
+    max-width: 75%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .sidebar {
+    display: none;
+  }
+  .account-overview {
+    width: 100%;
+  }
+}
+/* Sidebar styles */
+.sidebar {
+  background-color: #1a1b1eff;
+  width: 21vw;
+  padding: 0;
+}
+
+/* Unordered list for the sidebar */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 12vh 0;
+}
+
+/* List item styles for the sidebar */
+.sidebar li {
+  color: rgb(144, 144, 144);
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-top: 0.85px solid rgb(14, 14, 14);
+  border-bottom: 0.85px solid rgb(14, 14, 14);
+  border-radius: 0;
+}
+
+/* Active tab styles for the sidebar */
+.sidebar li.active {
+  border-left: 5px solid #ff5423;
+  color: white;
+  padding-left: calc(1rem - 5px);
+}
+
+/* Hover effect for list items in the sidebar */
+.sidebar li:hover {
+  color: rgb(144, 144, 144);
+  border-left: 5px solid #ff5423;
+  color: white;
+  padding-left: calc(1rem - 5px);
+}
+
+/* Hover effect for unselected items */
+.sidebar li:not(.active):hover {
+  color: rgb(144, 144, 144);
+}
+
+/* Icon margin for the sidebar list items */
+.sidebar li > svg {
+  margin-right: 0.5rem;
+}
+
+/* Account Overview styles */
+/* Account Overview styles */
+
+.account-overview {
+  width: 54vw;
+  margin: 3vh 4vw 15vh 4vw;
+}
+
+/* Key values styles */
+.account-overview .key {
+  color: grey;
+  padding-bottom: 15px;
+
+  /* Increased margin top and bottom */
+}
+
+/* Values on the right styles */
+.account-overview .value {
+  color: #333;
+  padding-bottom: 15px;
+  padding-left: 13vw;
+}
+
+/* Table styles */
+.account-overview table {
+  width: 100%;
+  border-collapse: separate;
+  margin: 0;
+  border-spacing: 0 15px;
+}
+
+/* Table row styles */
+.account-overview tr {
+  border-bottom: 2px solid grey;
+}
+
+.account-overview h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.account-overview h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.account-overview td {
+  padding-bottom: 15px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.account-overview h2 {
+  margin-bottom: 0;
+}
+/* Edit profile button styles */ /* Other styles remain unchanged */
+
+/* Edit profile button styles */
+.account-page .btn {
+  background-color: white;
+  border: 1px solid lightgrey;
+  color: black; /* Darker text color */
+  border-radius: 100px;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 0.5rem; /* Decreased margin */
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+}
+.account-page .btn:hover {
+  border: 1px solid rgb(91, 91, 91);
+}
+.account-page .btn:active {
+  outline: 0;
+}
+.btn:focus {
+  outline: 4px solid black;
+}
+/* Your Plan heading styles */
+.account-overview .your-plan {
+  margin-top: 2rem;
+  font-weight: bold; /* Bold text */
+  margin-bottom: 2rem; /* Increased top and bottom margin */
+}
+
+/* Plan card title styles */
+.account-overview .plan-title {
+  font-weight: 900; /* Bold text */
+  font-size: 1.9rem;
+  margin-left: 0rem;
+}
+
+/* Premium Doctor Card styles */
+.account-overview .plan-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Card top styles */
+.account-overview .plan-card .top {
+  padding: 3.5rem 1.5rem;
+}
+
+/* Card bottom styles */
+.account-overview .plan-card .bottom {
+  padding: 2rem 1.5rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.bold {
+  font-weight: bold;
+}
+.account-overview .plan-card .bottom .right-side .expires {
+  font-size: 0.8rem;
+  margin-top: 0;
+  padding-top: 0;
+  letter-spacing: 0.02rem;
+}
+.account-overview .plan-card .bottom .right-side .card {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  padding-top: 0;
+  letter-spacing: 0.02rem;
+}
+.account-overview .plan-card .bottom .right-side .nextBill {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 1rem;
+
+  padding-top: 0;
+  letter-spacing: 0.02rem;
+}
+.account-overview .plan-card .bottom .right-side .update {
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  padding-top: 0;
+  letter-spacing: 0.02rem;
+  text-decoration: none;
+  font-weight: 600;
+
+  color: rgb(91, 91, 91);
+  cursor: pointer;
+  margin-left: 0.3rem;
+  margin-bottom: 5px; /* Decreased margin */
+}
+.account-overview .plan-card .bottom .right-side .update:hover {
+  color: black;
+  /* Decreased margin */
+}
+/* Left side content of the bottom part of the card */
+.account-overview .plan-card .bottom .left-side {
+  flex: 1;
+}
+.account-overview .plan-card .bottom .left-side h5 {
+  font-size: 0.9rem;
+  margin: 0.8rem 0.5rem 1.5rem 0;
+}
+
+/* Right side content of the bottom part of the card */
+.account-overview .plan-card .bottom .right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align payment details to the left side */
+}
+.account-overview .plan-card .bottom .right-side .row {
+  width: 20vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Learn more link style */
+.account-overview .plan-card .bottom .left-side .learn-more {
+  display: block;
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 1px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Payment text style */
+.account-overview .plan-card .bottom .right-side .payment {
+  font-weight: bold;
+  font-size: 1.4rem; /* Increased size */
+  margin-bottom: 0.25rem; /* Decreased margin */
+}
+
+/* Visa and Expires text style */
+.account-overview .plan-card .bottom .right-side .visa-expires {
+  margin-bottom: 0; /* Decreased margin */
+}
+
+.right-side p,
+h5 {
+  margin: 5px;
+}
+.plan-buttons {
+  display: flex;
+  justify-content: start;
+  margin-top: 1rem;
+}
+.cancel-premium {
+  margin-left: 1rem;
+}
+.manage-business {
+  margin-top: 3.5rem;
+}
+.account-overview h5 {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+.account-overview .go {
+  margin-top: 1rem;
+}
+.profile-your-plan h1,
+.account-overview h2,
+.account-overview .plan-title {
+  color: black;
+}
+
+/* Removing border and border shadow for Manage your business accounts and Sign out */
+.account-overview .manage-business {
+  border-top: none;
+  border-bottom: none;
+  box-shadow: none;
+  margin-left: 0;
+  padding: 0;
+  color: black;
+  font-weight: bold;
+}

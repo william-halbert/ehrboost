@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../css/login.css";
-import logo from "../../images/logoBlack.png";
+import logo from "../../images/blackText.png";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 

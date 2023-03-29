@@ -1,0 +1,205 @@
+.account-page-right-wrap {
+  width: 84%;
+}
+.edit-profile {
+  width: 100%;
+}
+.edit-profile form {
+  margin: 0;
+  padding: 0 4rem;
+  max-width: 84%;
+}
+.edit-profile h1 {
+  margin: 2rem 0 2rem 4rem;
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: left;
+  color: black;
+}
+.edit-profile h2 {
+  margin: 2rem 0 1rem 4rem;
+}
+.edit-profile h3 {
+  margin: 0 0 1rem 4rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: black;
+}
+.edit-profile h1 .yourAddress {
+  margin: 2rem 0 0 0;
+}
+.form-group label {
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  text-align: left;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: black;
+}
+
+.input-wrapper {
+  width: 100%;
+}
+
+.form-control {
+  box-sizing: border-box;
+  margin: 0;
+  margin-right: 4rem;
+  margin-bottom: 1.2rem;
+  align-self: left;
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.date-of-birth-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 4rem;
+}
+
+.date-of-birth-inputs .form-control {
+  flex-grow: 1;
+  margin-right: 0;
+}
+.date-of-birth-inputs #day {
+  width: 20%;
+}
+
+.date-of-birth-inputs #month {
+  width: 40%;
+  padding: 15px 30px;
+}
+
+.date-of-birth-inputs #year {
+  width: 30%;
+}
+
+.date-of-birth-inputs input[type="number"] {
+  text-align: center;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+/*address css*/
+/* addressForm.css */
+
+.accountInput {
+  padding: 12px 25px;
+  border: 1px solid #3d3d3d;
+  border-radius: 3px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+}
+.accountInput::placeholder {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+.accountInput:focus {
+  outline: none !important;
+  border: 3px solid #fd5622ff;
+  padding: 10px 23px;
+}
+.accountInput:focus::placeholder {
+  color: transparent;
+}
+.form-control .small {
+  margin: 0;
+}
+.edit-profile hr {
+  margin: 1.5rem 0 1rem 0;
+  height: 0;
+  border: 0.5px solid black;
+}
+
+.form-control:focus {
+  border-color: #fd5622ff;
+  outline: 0;
+  box-shadow: none;
+}
+.edit-profile .orangeSubmit {
+  background: #fd5622ff;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.edit-profile .orangeSubmit:hover {
+  background: #fd5622ff;
+  border: 1px solid rgba(0, 0, 0, 0);
+  outline: 0;
+}
+.edit-profile .saveAddress {
+  width: 60%;
+}
+.form-actions-address {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.edit-profile .changePassword {
+  background-color: #f8f8f8ff;
+}

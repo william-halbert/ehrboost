@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../css/login.css";
-import logo from "../../images/logoBlack.png";
+import logo from "../../images/blackText.png";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import PhoneInput from "react-phone-input-2";
@@ -32,7 +32,7 @@ function VerifyPhone() {
       .then((res) => console.log(res))
       .then(() => {
         navigate(
-          "../signup/note-on-credits",
+          "../home",
           {
             state: {
               email: location.state.email,
@@ -56,21 +56,23 @@ function VerifyPhone() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <img src={logo} className="loginLogo" />
-      <h2 className="welcomeLogin">Verify your phone number</h2>
+      <img src={logo} className="loginLogo " />
+      <h2 className="welcomeLogin">Add your phone number</h2>
       <form action="POST" onSubmit={handleSubmit}>
-        <label for="passwordLogin">Phone number</label>
+        <label for="passwordLogin" className="moveLeft">
+          Phone number
+        </label>
         <input
           type="tel"
           id="phone"
           onChange={(e) => updateForm(e)}
           placeholder="+1(999)999-9999"
-          className="passwordLogin loginBtn"
+          className="passwordLogin loginBtn moveLeft"
         />
         <input
           type="submit"
-          className="submitLogin loginBtn"
-          value="Send code"
+          className="submitLogin loginBtn moveLeft"
+          value="Continue"
         />
       </form>
     </motion.div>

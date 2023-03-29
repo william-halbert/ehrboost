@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../images/whiteLogo.png";
+import logo from "../images/whiteText.png";
 import "../css/header.css";
 import { Link, useLocation } from "react-router-dom";
 
@@ -23,9 +23,7 @@ function HeaderLanding() {
       <Link to="../">
         <img src={logo} className="headerLogo" />
       </Link>
-      <Link to="features" className="features">
-        Features
-      </Link>
+      <Link to="features" className="features"></Link>
       <Link to="../login" className="signIn">
         Sign In
       </Link>

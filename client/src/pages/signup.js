@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "../components/header";
 import "../css/login.css";
-import logo from "../images/logoBlack.png";
+import logo from "../images/blackText.png";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -70,8 +70,8 @@ function Signup() {
       transition={{ duration: 0.5 }}
     >
       <img src={logo} className="loginLogo" />
-      <h2 className="welcomeSignup">Create Your Account</h2>
-      <p className="pleaseNoteLogin">
+      <h2 className="welcomeSignup moveRight">Create Your Account</h2>
+      <p className="pleaseNoteLogin moveRight">
         Please note that phone verification is required for signup. Your number
         will only be used to verify your identity for security purposes.
       </p>
@@ -82,7 +82,7 @@ function Signup() {
           value={email}
           onChange={(e) => updateForm(e)}
           placeholder="Email address"
-          className="emailLogin loginBtn"
+          className="emailLogin loginBtn moveLeft"
         />
         <input
           type="password"
@@ -90,17 +90,17 @@ function Signup() {
           value={password}
           onChange={(e) => updateForm(e)}
           placeholder="Password"
-          className="passwordLogin loginBtn"
+          className="passwordLogin loginBtn moveLeft"
         />
         <input
           type="submit"
-          className="submitLogin loginBtn signUpBtn"
+          className="submitLogin loginBtn signUpBtn moveLeft"
           value="Continue"
         />
       </form>
-      <div className="loginToSignup">
-        <p className="dontLogin">Already have an account?</p>
-        <Link to="../login" className="loginLinkToSignup">
+      <div className="loginToSignup moveRight">
+        <p className="dontLogin moveLeft">Already have an account?</p>
+        <Link to="../login" className="loginLinkToSignup ">
           Log In
         </Link>
       </div>
