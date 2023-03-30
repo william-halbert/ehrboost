@@ -10,7 +10,7 @@
 
 # production
 /build
-/server/config
+/config
 
 # misc
 dev.env

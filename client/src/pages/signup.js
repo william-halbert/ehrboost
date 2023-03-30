@@ -25,7 +25,7 @@ function Signup() {
     e.preventDefault();
     // When a post request is sent to the create url, we'll add a new record to the database.
     async function signUpJSON() {
-      const response = await fetch("http://127.0.0.1:4000/users", {
+      const response = await fetch("http://127.0.0.1:4000/api/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -38,7 +38,7 @@ function Signup() {
       const user = await response.json();
     }
     async function logInJSON() {
-      const response = await fetch("http://127.0.0.1:4000/users/login", {
+      const response = await fetch("http://127.0.0.1:4000/api/users/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
